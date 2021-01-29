@@ -1,0 +1,4 @@
+
+TD.grButtonLeft { width:8px; height:24px; background-image: url(button_left.gif); background-repeat: no-repeat;}
+TD.grButtonMid { padding: 0 !important; border: 0;	background-image: url(button_middle.gif); background-repeat: repeat-x;}
+TD.grButtonRight {width:8px; height:24px; background-image: url(button_right.gif); background-repeat: no-repeat;}

@@ -1,0 +1,344 @@
+/* Structural Defaults
+-------------------------------------------------------------- */
+#container-1 {width: 950px; margin:0 auto;}
+#container-3 {width:790px;}
+ul.multiselect-checkboxes, ul.rank-order-current, ul.singleselect-radio, ul.rank-order-interactive, ul.rank-order-interactive-img, ul.data-list, ul.constant-sum, ul.grades { margin: 0; padding: 0; list-style-type: none; }
+ul.rank-order-interactive li, ul.rank-order-interactive-img li { margin: 3px 0; padding: 3px; }
+#navigation { text-align: center; }
+
+.RowSpacer { line-height: 7px;}
+.align-l { text-align:left;}
+.align-c { text-align:center;}
+.align-r { text-align:right;}
+.align-m { vertical-align:middle;}
+
+/* Profile Fields */
+ul.vertical.left li:hover, ul.vertical.center li:hover { background: none; }
+ul.profile.center span.label-container { width: 50%; display: inline-block; float: left; text-align: right; }
+ul.profile.center span.label-container label { margin-right: 10px; }
+ul.profile.center span.input-container { width: 50%; display: inline-block; float: left; }
+ul.profile.center span.input-container input { width: 150px; }
+
+/* Presentation Headers */
+.presentation-header h2 { margin: 10px 0; font-size: 1.25em; padding:0 0 3px 0; }
+.presentation-header p	{ margin: 10px 0; line-height: 1.75em; }
+
+/* Progress Bar */
+.ui-progressbar { position: relative; }
+div#progressbar span { padding: 3px; position: absolute; }
+
+/* Multiple and Single Select */
+ul.vertical, ul.horizontal { padding: 0; list-style-type: none; float: left; width: 100%; font-weight: normal; }
+ul.horizontal li { margin: 0 25px 15px 0; width: auto; float: left; position: relative; }
+ul.vertical li { margin: 0 10px 0 0; width: auto; position: relative; }
+
+ul.two-column { width: 100%; float: left; }
+ul.two-column li { width: 49%; padding: 3px 0; float: left; }
+ul.three-column { width: 100%; float: left; }
+ul.three-column li { width: 33.3%; padding: 3px 0; float: left; }
+ul.four-column { width: 100%; float: left; }
+ul.four-column li { width: 25%; padding: 3px 0; float: left; }
+ul.five-column { width: 100%; float: left; }
+ul.five-column li { width: 20%; padding: 3px 0; float: left; }
+
+/* Input Orientation */
+li.has-image label { position: absolute; left: -999999px; } /* remove label from document flow */
+ul.left li.has-image span { margin-top: -11px; position: absolute; top: 50%; left: 0; }
+ul.left li.has-image img { margin-left: 30px; }
+ul.left li input { position: relative; top: 2px; }
+ul.leftVert li.has-image span { margin-top: -11px; position: absolute; top: 50%; left: 0; }     /*For Vertical SC & MC Qstn Type*/
+ul.leftVert li.has-image img { margin-left: 30px; }
+ul.top li.has-image span.radio-btn, ul.top li span.radio-btn { width: auto; margin-left: -11px; position: absolute; top: 0; left: 50%; display: block; }
+ul.top li.has-image img { margin-top: 20px; }
+ul.top li label { margin-top: 20px; display: block; }
+ul.top li.other label { margin-top: 0; display: inline; }
+ul.top li.other span.choice { margin-top: 20px; display: block; }
+ul.bottom li { margin-bottom: 10px; }
+ul.bottom li.has-image  span.radio-btn, ul.bottom li  span.radio-btn { width: auto; margin-left: -11px; position: absolute; bottom: 0; left: 50%; display: block; }
+ul.bottom li.has-image img { margin-bottom: 20px; }
+ul.bottom li label { margin-bottom: 20px; display: block; text-align: center; }
+ul.bottom li.other label { margin-top: 0; display: inline; }
+ul.bottom li.other span.choice { margin-bottom: 20px; display: block; }
+
+ul.multiselect-checkboxes .radio-btn label, ul.singleselect-radio .radio-btn label { top: 0; }
+
+/* Rank Order, Constant Sum & DataList*/
+ul.data-list li, ul.constant-sum li, ul.rank-order-current li { width: 100%; padding: 5px 0; }
+ul.data-list li input, ul.constant-sum li input, ul.rank-order-current li input { margin-right: 5px; float: right; }
+ul.data-list li label, ul.constant-sum li label, ul.rank-order-current li label { margin-left: 5px; float: left; }
+table.tbRO td label, .lbl508 label { position: absolute; left: -999999px; }
+
+/* Matrix Questions */
+/*
+table.matrix { width: 100%; }
+table.matrix tr.header { background: #fff; }
+table.matrix tr.header th { text-align: center; } 
+table.matrix th, table.matrix td { padding: 5px; }
+table.matrix th {text-align: left;}
+table.matrix input[type=text], table.matrix input.text { width: 90%; text-align: center; }
+table.matrix input { position: relative; z-index: 2; }
+table.matrix td.selectable { position: relative; z-index: 1; }
+*/
+table.matrix td { text-align: center; } 
+table.matrix td label { position: absolute; left: -999999px; }
+table.matrix th.gutter { padding: 0; width: 3% !important; }
+table.matrix.interactive th label { position: relative; left: 0; }
+table.matrix.interactive select, table.matrix.interactive td label { position: absolute; left: -99999px; }
+
+/* Net Promoter */
+table.net-promoter { width: 100%; }
+table.net-promoter td { width: 9%; padding: 5px 0; text-align: center; }
+table.net-promoter input { position: relative; z-index: 5; }
+div.net-promoter { width: 100%; height: 1.5em; position: relative; z-index: 1; }
+div.net-promoter .ui-slider-handle, table.matrix.interactive .ui-slider-handle { background: url(/g/css/common/images/ui-handle-vertical.png) repeat-y; position: absolute; z-index: 10; width: 10px; height: 15px; cursor: pointer; }
+select.slider { margin: 10px 0; display: block; visibility: hidden; position: absolute; left:-99999px}
+.np-align-left { text-align:left !important; }
+.np-align-right { text-align:right !important; }
+
+/* Sliders
+-------------------------------------------------------------- */
+div.point-scale, div.five-pt-grade, div.thirteen-pt-grade { position: relative; }
+
+/* Vertical Scales */
+div.point-scale { padding-left: 10px; }
+div.point-scale div.slider { height: 250px; width: 100px; position: relative; }
+div.point-scale div.slider .ui-slider-handle { width: 106px; height: 10px; background-color: #676767; position: absolute; cursor: pointer; z-index: 2;}
+div.point-scale ul { height: 100%; padding: 0; margin: 0; list-style-type: none; position: relative; left: 0; bottom: 0; z-index: 2; }
+div.point-scale li { width: 100px; background: none; position: absolute; border-top: 1px solid #aaaaaa; text-align: center; }
+div.five span.v-tick-label { margin: 15px 0; display: block; position: absolute; left: 105px; top: -23px; }
+div.seven span.v-tick-label { margin: 10px 0; display: block; position: absolute; left: 105px; top: -20px; }
+div.nine span.v-tick-label { margin: 5px 0; display: block; position: absolute; left: 105px; top: -15px; }
+span.int-top-label { width: 500px; padding:0 !important; position: absolute; left: 145px; top: -10px; z-index: 1000; }
+span.int-bottom-label { width: 500px; padding:0 !important; position: absolute; left: 145px; bottom: -8px; z-index: 1000; }
+
+/* Grades */
+div.five-pt-grade div.display, div.thirteen-pt-grade div.display { width: 150px; height: 150px; margin-right: 20px; overflow: hidden; float: left; }
+div.five-pt-grade .ui-slider-handle, div.thirteen-pt-grade .ui-slider-handle, div.smiley-face .ui-slider-handle { margin-left: -8px; width: 30px; height: 10px; background: url(/g/css/common/images/ui-handle-horizontal.png) repeat-x 50%; cursor: pointer; position: absolute; z-index: 2; }
+div.five-pt-grade div.slider, div.thirteen-pt-grade div.slider { top: 45px; left: 170px; position: absolute; }
+
+/* Smiley Face, Stop Light & Gauge */
+div.smiley-face .ui-slider-handle, div.gauge .ui-slider-handle { background: url(/g/css/common/images/ui-handle-vertical.png) repeat-x 50%; margin-top: -8px; width: 10px; height: 30px; }
+div.smiley-face .ui-slider-horizontal, div.gauge .ui-slider-horizontal { margin-top: 15px; width: 160px; }
+div.smiley-face div.display { width: 160px; height: 160px; margin-right: 20px; overflow: hidden; }
+div.stop-light div.display { width: 65px; height: 150px; float: left; }
+div.stop-light div.slider { height: 135px; position: relative; top: -10px; left: 80px; }
+div.stop-light .ui-slider-handle { margin-left: -8px; width: 30px; height: 10px; background: url(/g/css/common/images/ui-handle-horizontal.png) repeat-x 50%; cursor: pointer; position: absolute; z-index: 2; }
+div.gauge div.display { width: 150px; height: 150px; margin-right: 20px; overflow: hidden; }
+span.gauge-input { position: absolute; left: 67px; bottom: 18px; }
+span.gauge-input input { width: 23px; font-size: 16px; text-align: center; border: none; }
+
+/* Rank Order & Constant Sum */
+ul.constant-sum li input, ul.rank-order-current li input { width: 30px; text-align: center; font-weight: bold; float: right; }
+ul.constant-sum li, ul.rank-order-interactive li { cursor: pointer; }
+ul.rank-order-interactive li label { margin-left: 10px; }
+ul.constant-sum li label:hover, ul.rank-order-interactive li label:hover, ul.rank-order-interactive-img li { cursor: pointer; }
+ul.rank-order-interactive li input { width: 30px; border: none; background: none; text-align: center; font-weight: bold; color: #000 !important; float: left; }
+ul.rank-order-interactive-img li input { width: 50px; padding: 25px 0; border: none; background: none; text-align: center; font-weight: bold; color: #464646; float: left; }
+ul.rank-order-interactive-img img { border: 1px solid #ccc; }
+ul.rank-order-interactive-img label { position: absolute; left: -9999px; }
+
+div.drag-container { width: 100%; float: left; }
+div.drop-container { width: 100%; float: left; }
+div.drag { width: 75px; height: 75px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+div.drop { width: 100px; height: 80px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+
+/* aligns checkbox / radio input with text */
+/*
+input[type=checkbox], input.checkbox, input[type=radio], input.radio { position: relative; top: .2em; }
+*/
+
+/* Forms
+-------------------------------------------------------------- */
+legend { font-weight: bold; padding: 0 10px 0 0; }
+div.fieldset { width: 100%; float: left; clear: both; position: relative; margin:0 0 40px 0; }
+div.fieldset span.input { display: block; }
+h3.question-label { padding: 0 10px 0 0; display: block; font-weight: bold; font-size: 1em; }
+label.top { display: block; }
+label.left { display: inline; position: relative; top: .1em; }
+label.right { float: left; }
+input.value, input.max, input.min { width: 15px; visibility: hidden; }
+textarea { font-size: inherit !important; font-family: inherit !important; }
+
+/* Theme
+-------------------------------------------------------------- */
+#container-4 { padding: 10px; float: left; }
+ul.data-list li, ul.rank-order-current li, ul.constant-sum li { border-bottom: 1px solid #fff; }
+
+/* Single and Multi Select */
+ul#multiselect-interactive .ul-selecting { background: #feca40; }
+ul#multiselect-interactive .ui-selected { background: #000; color: #fff; }
+/*ul.vertical li:hover, ul.two-column li:hover, ul.three-column li:hover { background: #ebebeb; }*/
+
+/* Data List */
+ul.data-list li { background: #ededed; }
+ul.data-list li:hover { background: #ccc; }
+
+/* Matrix */
+/* table.matrix { background: #ececec; } 
+table.matrix th, table.matrix td { border-bottom: 3px solid #fff; }
+table.matrix tr.alternate-row { background: #ccc; }
+table.matrix tr.header:hover { background: #fff; }
+table.matrix tr:hover { background: #acacac; cursor: default; }
+*/
+table.matrix td:hover { background: #b0b0b0; }
+
+/* Net Promoter */
+table.net-promoter tr.scale { background: #ececec; }
+table.net-promoter tr.scale td:hover { background: #ccc; }
+
+/* Rank Order & Constant Sum */
+ul.constant-sum li, ul.rank-order-current li { background: #ededed; }
+ul.constant-sum li label, ul.rank-order-current li label { color: #000; }
+ul.constant-sum li.total { background: #ccc; }
+ul.constant-sum li:hover, ul.rank-order-current li:hover { background: #ccc; }
+
+/* Forms */
+.ui-slider  { text-decoration: none !important; }
+
+/* UI Slider
+-------------------------------------------------------------- */
+.ui-slider .ui-slider-handle { overflow: visible !important; }
+.ui-slider .ui-slider-tooltip { display: none; }
+.ui-slider .screenReaderContext { position: absolute; width: 0; height: 0; overflow: hidden; left: -999999999px; }
+.ui-slider .ui-state-active .ui-slider-tooltip, .ui-slider .ui-state-focus .ui-slider-tooltip, .ui-slider .ui-state-hover .ui-slider-tooltip { display: block; position: absolute; bottom: 2.5em;
+text-align: center; padding: .3em .2em .4em; font-size: .9em; width: 8em; margin-left: -3.7em; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down, .ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner { position: absolute; display: block; width:0; height:0; border-bottom-width: 0; background: none; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down { border-left: 7px dashed transparent; border-right: 7px dashed transparent; border-top-width: 8px; bottom: -8px; right: auto; left: 50%; margin-left: -7px; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner { border-left: 6px dashed transparent; border-right: 6px dashed transparent; border-top: 7px solid #fff; bottom: auto; top: -9px; left: -6px; }
+.ui-slider a { text-decoration: none; }
+.ui-slider ol, .ui-slider li, .ui-slider dl, .ui-slider dd, .ui-slider dt { list-style: none; margin: 0; padding: 0; }
+.ui-slider ol, .ui-slider dl { position: relative; top: 1.3em; width: 100%; }
+.ui-slider dt { top: 1.5em; position: absolute; padding-top: .2em; text-align: center; border-bottom: 1px dotted #ddd; height: .7em; color: #999; }
+.ui-slider dt span { background: #fff; padding: 0 .5em; }
+.ui-slider li, .ui-slider dd { position: absolute; overflow: visible; color: #666; }
+.ui-slider span.ui-slider-label { position: absolute; }
+.ui-slider li span.ui-slider-label, .ui-slider dd span.ui-slider-label { display: none; }
+.ui-slider li span.ui-slider-label-show, .ui-slider dd span.ui-slider-label-show { display: block; }
+.ui-slider span.ui-slider-tic { position: absolute; left: 0; height: .8em; top: -1.3em; }
+.ui-slider li span.ui-widget-content, .ui-slider dd span.ui-widget-content { border-right: 0; border-left-width: 1px; border-left-style: solid; border-top: 0; border-bottom: 0; }
+.ui-slider .first .ui-slider-tic, .ui-slider .last .ui-slider-tic { display: none; }
+.ui-slider { text-decoration: none !important; }
+.ui-slider .ui-slider-handle { overflow: visible !important; }
+.ui-slider .ui-slider-tooltip { display: none; }
+.ui-slider .screenReaderContext { position: absolute; width: 0; height: 0; overflow: hidden; left: -999999999px; }
+.ui-slider .ui-state-active .ui-slider-tooltip, .ui-slider .ui-state-focus .ui-slider-tooltip, .ui-slider .ui-state-hover .ui-slider-tooltip { display: block; position: absolute; bottom: 2.5em; text-align: center; padding: .3em .2em .4em; font-size: .9em; width: 8em; margin-left: -3.7em; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down, .ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner { position: absolute;  display: block; width:0; height:0; border-bottom-width: 0; background: none; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down { border-left: 7px dashed transparent; border-right: 7px dashed transparent; border-top-width: 8px; bottom: -8px; right: auto; left: 50%; margin-left: -7px; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner { border-left: 6px dashed transparent;  border-right: 6px dashed transparent; border-top: 7px solid #fff; bottom: auto; top: -9px; left: -6px; }
+.ui-slider a { text-decoration: none; }
+.ui-slider ol, .ui-slider li, .ui-slider dl, .ui-slider dd, .ui-slider dt { list-style: none; margin: 0; padding: 0; }
+.ui-slider ol, .ui-slider dl { position: relative; top: 1.3em; width: 100%; }
+.ui-slider dt { top: 1.5em; position: absolute; padding-top: .2em; text-align: center; border-bottom: 1px dotted #ddd; height: .7em; color: #999; }
+.ui-slider dt span { background: #fff; padding: 0 .5em; }
+.ui-slider li, .ui-slider dd { position: absolute; overflow: visible; color: #666; }
+.ui-slider span.ui-slider-label { position: absolute; }
+.ui-slider li span.ui-slider-label, .ui-slider dd span.ui-slider-label { display: none; }
+.ui-slider li span.ui-slider-label-show, .ui-slider dd span.ui-slider-label-show { display: block; }
+.ui-slider span.ui-slider-tic { position: absolute; left: 0; height: .8em; top: -1.3em; }
+.ui-slider li span.ui-widget-content, .ui-slider dd span.ui-widget-content { border-right: 0; border-left-width: 1px; border-left-style: solid; border-top: 0; border-bottom: 0; }
+.ui-slider .first .ui-slider-tic, .ui-slider .last .ui-slider-tic { display: none; }
+.ui-slider  { text-decoration: none !important; }
+.ui-slider .ui-slider-handle  { overflow: visible !important; }
+.ui-slider .ui-slider-tooltip { display: none; }
+.ui-slider .screenReaderContext { position: absolute; width: 0; height: 0; overflow: hidden; left: -999999999px; }
+.ui-slider .ui-state-active .ui-slider-tooltip, .ui-slider .ui-state-focus .ui-slider-tooltip, .ui-slider .ui-state-hover .ui-slider-tooltip { display: block; position: absolute; bottom: 2.5em; text-align: center; padding: .3em .2em .4em; font-size: .9em; width: 8em; margin-left: -3.7em; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down, .ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner { position: absolute; display: block; width:0; height:0; border-bottom-width: 0; background: none; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down { border-left: 7px dashed transparent; border-right: 7px dashed transparent; border-top-width: 8px; bottom: -8px; right: auto; left: 50%; margin-left: -7px; }
+.ui-slider .ui-slider-tooltip .ui-tooltip-pointer-down-inner { border-left: 6px dashed transparent; border-right: 6px dashed transparent; border-top: 7px solid #fff; bottom: auto; top: -9px; left: -6px; }
+.ui-slider a { text-decoration: none; }
+.ui-slider ol, .ui-slider li, .ui-slider dl, .ui-slider dd, .ui-slider dt { list-style: none; margin: 0; padding: 0; }
+.ui-slider ol, .ui-slider dl { position: relative; top: 1.3em; width: 100%; }
+.ui-slider dt { top: 1.5em; position: absolute; padding-top: .2em; text-align: center; border-bottom: 1px dotted #ddd; height: .7em; color: #999; }
+.ui-slider dt span { background: #fff; padding: 0 .5em; }
+.ui-slider li, .ui-slider dd { position: absolute; overflow: visible; color: #666; }
+.ui-slider span.ui-slider-label { position: absolute; }
+.ui-slider li span.ui-slider-label, .ui-slider dd span.ui-slider-label { display: none; }
+.ui-slider li span.ui-slider-label-show, .ui-slider dd span.ui-slider-label-show { display: block; }
+.ui-slider span.ui-slider-tic { position: absolute; left: 0; height: .8em; top: -1.3em; }
+.ui-slider li span.ui-widget-content, .ui-slider dd span.ui-widget-content { border-right: 0; border-left-width: 1px; border-left-style: solid; border-top: 0; border-bottom: 0; }
+.ui-slider .first .ui-slider-tic, .ui-slider .last .ui-slider-tic { display: none; }
+
+/* Miscellenous Styles
+-------------------------------------------------------------- */
+.hide { visibility: hidden; }
+.question-text-req, .FormLabelReq { font-weight: bold; color: #CC0000; }
+td.question-text-req { vertical-align: top; }
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow:hidden;
+}
+.clearfix { display: block; }
+
+/* CSS redesign for question framewok
+-------------------------------------------------------------- */
+
+/*Question Types Class Names*/
+.single-select-radio {width:100%;}
+.single-choice-radio-vert {width:100%;}
+.single-choice-radio-horiz {width:100%;}
+.single-choice-drop-down {width:100%;}
+.multiple-choice-list-box {width:100%;}
+.multiple-choice-check-box-horiz {width:100%;}
+.multiple-choice-check-box-vert {width:100%;}
+.matrix-question-check-box {width:100%;}
+.matrix-question-radio {width:100%;}
+.matrix-question-side-by-side {width:100%;}
+.matrix-question-text-box {width:100%;}
+.presentation-header {width:100%;}
+.comment-field {width:100%;}
+.open-ended-field {width:100%;}
+.rank-order {width:100%}
+.nested-drop-down {width:100%;}
+.net-promoter {width:100%;}
+.data-list {width:100%;}
+.date-time {width:100%}
+.interactive-slider-scale {width:100%;}
+
+/*Survey Structure*/
+div.survey-container {width:100%;}
+div.question-container {overflow:hidden;}
+
+/*Questions Alignment*/
+div.question {padding:0 0 10px 5px;}
+div.question-align-contact-field {width:30.7%; float:left; padding:0 0 10px 0;}
+div.question-align-right {width:40%; float:left;}
+div.question-container .profileIconContainer { float: left; width: 100px; height: 100px; border: 1px solid #000000;  margin: 0 10px 5px 0; }
+div.question-req span.question-text-req, div.question-req label.question-text-req {color:#CC0000; font-weight:bold;}
+div.question-req div.question span.required-star { color:#CC0000; font-weight: bold; }
+div.question-req div.question span.question-text, div.question-req div.question label.question-text { color: #CC0000; font-weight: bold; }
+
+div.choices {padding:0 0 0 5px; overflow-x:auto;}
+div.choices ul li {padding:2px 0 5px 0;}
+
+/*Hide scroll bar */
+.hide-scroll { overflow-y:hidden; }
+
+/*Image Alignment*/
+div.image-align-left {float:left; margin:0 10px 0 0; }
+div.image-align-right {float:right; margin:0 10px 0 0; }
+div.image-align-top {text-align:center; margin:0 0 10px 0; }
+
+/*Choices Alignment*/
+div.choices-align-left {float:left;}
+div.file-upload div.choices-align-left { float:none; width:auto; }
+
+/*Help Text*/
+div.help-text {float:left; padding: 0 0 0 10px;}
+div.file-upload div.help-text { padding-top: 10px; }
+
+/*Matrix*/
+table.matrix tr th {padding:0 10px 0 10px; }
+
+/*Old Event Framework*/
+td.FormInfoTxt div table tr td div.fieldset {margin:0 0 10px 0;} 
+span.required-star { color: #CC0000; font-weight: bold; }
+
