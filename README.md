@@ -1,3 +1,3 @@
-# WB-Technical-Exercise
+# WB Technical Exercise
 
  
